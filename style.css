@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+body{
+    font-family: 'Handlee',cursive;
+    margin: 0;
+    background-image: url(./bg-pattern.png);
+    
+}
+body header{
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bolder;
+    animation-name: rainbow;
+    text-shadow: 0.1em 0.1em 0 transparent;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.tophead{
+    text-align: center;
+    margin: 2em;
+    border-radius: 1em;
+    padding: 2em;
+    background: #000;
+    color: #fff;
+}
+.tophead h1{
+    font-family: 'Staatliches',sans-serif;
+    margin: 1.5em 0em;
+}
+.tophead p{
+    margin: 1.5em;
+    font-weight: bold;
+}
+.form-box{
+    font-weight: bold;
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    border-radius: 1em;
+}
+input[type="text"]{
+    height: 2em;
+    border-radius: 0.5em;
+}
+input[type="button"]{
+    height: 2em;
+    width: 13em;
+    font-weight: bold;
+    font-family: 'Handlee',cursive;
+    background-color: hsl(99, 60%, 62%);
+    border-radius: 0.5em;
+}
+.form-box p{
+    font-weight: bold;
+    margin: 0;
+}
+.features{
+    margin: 0em 2em;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 15px;
+}
+.product-card-1{
+    background:hsl(0, 0%, 0%);
+    color: #fff;
+    padding: 1em;   
+    margin: 1em 0em;
+    border-radius: 1em;
+    text-align: center;
+}
+.sec-1 img{
+    width: 20em;
+    height: 15em;
+    border-radius: 0.5em;
+}
+.product-card-1 button{
+    border: none;
+    background: hsl(99, 60%, 62%);
+    width: 7em;
+    height: 3em;
+    font-weight: bolder;
+    font-size: 1em;
+    font-family: 'Handlee',cursive;
+    border-radius: 1em;
+    text-align: center;
+}
+.product-card-2{
+    background-color: black;
+    color: #fff;
+    padding: 1em;   
+    margin: 1em 0em;
+    border-radius: 1em;
+    text-align: center;
+}
+.product-card-2 button{
+    border: none;
+    background: hsl(99, 60%, 62%);
+    width: 7em;
+    height: 3em;
+    font-weight: bolder;
+    font-size: 1em;
+    font-family: 'Handlee',cursive;
+    border-radius: 1em;
+    text-align: center;
+}
+.product-card-3{
+    background-color: black;
+    color: #fff;
+    padding: 1em;   
+    margin: 1em 0em;
+    border-radius: 1em;
+    text-align: center;
+}
+.product-card-3 button{
+    border: none;
+    background: hsl(99, 60%, 62%);
+    width: 7em;
+    height: 3em;
+    font-weight: bolder;
+    font-size: 1em;
+    font-family: 'Handlee',cursive;
+    border-radius: 1em;
+    text-align: center;
+}
+footer{
+    font-family: 'Staatliches',sans-serif;
+    background-color: black;
+    text-align: center;
+    color: #fff;
+}
+@media (min-width: 800px){
+    .features{
+        flex-direction: row;
+    }
+    .sec-1{
+        display: flex;
+        column-gap: 2em;
+    }
+}
+@keyframes rainbow {
+    0%   { text-shadow: 0.1em 0.1em 0 pink;}
+    25%  { text-shadow: 0.1em 0.1em 0 orange;}
+    50%  { text-shadow: 0.1em 0.1em 0 yellow;}
+    75%  { text-shadow: 0.1em 0.1em 0 greenyellow;}
+    100% { text-shadow: 0.1em 0.1em 0 lightskyblue;}
+}
